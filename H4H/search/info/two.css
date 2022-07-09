@@ -1,0 +1,128 @@
+
+.left,.right
+{
+    height: 100vh;
+    width: 100%;
+}
+.left
+{
+    background: linear-gradient(-45deg, rgba(20, 42, 139, 0.945),rgba(3, 7, 41, 0.959));
+}
+@media screen and (min-width : 768px)
+{
+    .left,.right{
+        height: 100vh;
+    }
+}
+h2,h1{
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+  font-size: 4rem;
+  color: #eaf6f6;
+}
+.left{
+    color: whitesmoke;
+    padding-top: 10%;
+    padding-left: 5px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+.change
+{
+    width :25%;
+}
+.change2
+{
+    width:25%;
+    height: 20%;
+}
+.des{
+  margin-top: 4%;
+  margin-left: 4%;
+  margin-right: 2%;
+  font-family:'Amaranth', sans-serif ;
+  font-size: 1.25rem;
+}
+/* From uiverse.io */
+/* From uiverse.io by @satyamchaudharydev */
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: pink;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+  .info
+  {
+    padding : 5% 0 5% 10%;
+    bottom: 0;
+    background: linear-gradient(-45deg,rgba(3, 7, 41, 0.959), rgba(20, 42, 139, 0.945));
+  }
+  .info h3{
+    color: #fff;
+  }
+  .info .infoBox div
+  {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+  }
+  .info .infoBox div span{
+    min-width:40px;
+    height:40px;
+    color:#fff;
+    background:#18b7ff ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+border-radius: 50%;
+margin-right: 15px;
+  }
+  .info .infoBox div p{
+    color : #fff;
+  }
+  .info .infoBox div a{
+    color: #fff;
+    text-decoration: none;
+  }
