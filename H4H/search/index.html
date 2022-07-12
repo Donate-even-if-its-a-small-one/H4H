@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Vidaloka&family=Amaranth&display=swap"
+      rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Space+Mono:wght@700&family=Special+Elite&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+    <div class="wrapper">
+      <div id="search-container">
+        <div class="space">
+        <a style="background-color :#dbdbe5 ;left: 0%;position: absolute;padding-top: 2px;" href="../Home/index.html"> <img style="height: 5em;" src="images/logo.png" alt=".." width="200" height="60" class="mx-3 align-text-center"></a></div>
+        <h1 style="text-align: center;
+                    font-family: 'Bangers', cursive;
+  font-family: 'Special Elite', cursive;
+                  font-size: 4rem;
+                  color:rgba(20, 42, 139, 0.945) ;padding: 2% 0 2.5%;">SEARCH AND DONATE</h1>
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search NGO name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Asked')">
+          Asked
+        </button>
+        <button class="button-value" onclick="filterProduct('Food')">
+          Food
+        </button>
+        <button class="button-value" onclick="filterProduct('Book')">
+          Book
+        </button>
+        <button class="button-value" onclick="filterProduct('Cloth')">
+          Clothes
+        </button>
+        <button class="button-value" onclick="filterProduct('gad')">
+          Gadgets
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
